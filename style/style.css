@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* grid-template-rows: repeat(1, 1fr); */
+    grid-gap: 1rem;
+    grid-auto-flow: dense; /* Faka jayga fillup krar jnno dense algorithm follow korte hoy */
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover; /* image ratio thik rakhar jnno use kra hoy*/
+}
+/* .container img:hover{
+    border: 5px solid green;
+} */
+.container div:hover{
+    border: 5px solid aqua;
+    border-radius: 5px;
+}
+.container div:nth-child(2n):hover{
+    border: 5px solid red;
+    border-radius: 5px;
+}
+.container div:nth-child(3n):hover{
+    border: 5px solid black;
+    border-radius: 5px;
+}
+.container div:nth-child(4n):hover{
+    border: 5px solid gold;
+    border-radius: 5px;
+}
+.container div:nth-child(5n):hover{
+    border: 5px solid slateblue;
+    border-radius: 5px;
+}
+.container div:nth-child(6n):hover{
+    border: 5px solid purple;
+    border-radius: 5px;
+}
+.normal{
+grid-column: 1fr;
+grid-row: 1fr;
+}
+.horizontal{
+grid-column: span 2;
+}
+.vertical{
+grid-row: span 2;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
